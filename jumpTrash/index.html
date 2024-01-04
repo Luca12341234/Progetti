@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dino Game</title>
+  <style>
+    #gameContainer {
+      width: 600px;
+      height: 200px;
+      border: 2px solid black;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+     background-color: #666;
+      
+    }
+    #dino {
+      width: 40px;
+      height: 40px;
+      background-color: #666;
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+    }
+    .obstacle {
+      width: 40px;
+      height: 60px;
+      background-color: #666;
+      position: absolute;
+      bottom: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="scoreDisplay">Score: 0</div>
+  <img id="dino" src="img/trashcan.png" alt="Trash Can">
+</div>
+  <a href="https://dinolama.lucamagrini1.repl.co/">
+<button id="restartButton" style="display: none;">Restart</button>
+  </a>
+  <script src="game.js"></script>
+</body>
+</html>

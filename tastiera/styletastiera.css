@@ -1,0 +1,42 @@
+ul{
+	list-style-type: none;
+}
+#container{
+	width:90%;
+	margin:0 auto;
+}
+h1{
+	font-family: 'Rock 3D', cursive;
+	color:yellow;
+}
+.we{
+	border:10px outset green;
+}
+li{
+	color:cyan;
+	font-size:20px;
+	font-family:Snell Roundhand, cursive;
+	text-shadow: 2px 2px 5px blue;
+	background-color:red;
+}
+body{
+	background-color:#008080;
+}
+button{
+	border-radius:25px;
+	background-color:red;
+	width:100px;
+}
+p{
+	background-color:blue;
+	font-size:50px;
+}
+div{
+	background-color:cyan;
+}
+img{
+	border-radius:25px;	
+}
+#doo,#ree,#mii,#faa,#soll,#laa,#sii{
+	font-size:20px;
+} 

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Episode to Chapter Converter</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5; /* Colore di sfondo ispirato al Giappone */
+    }
+
+    select,
+    input,
+    button {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px;
+      cursor: pointer;
+      background-color: #ffcc00; /* Giallo ispirato al Giappone */
+      color: #333; /* Colore del testo */
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    #animeSelect,
+    #arcSelect,
+    #episodeInput {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    #animeSelect,
+    #arcSelect {
+      background-color: #fff; /* Sfondo bianco */
+      border: 1px solid #ccc; /* Bordo grigio */
+      border-radius: 4px; /* Angoli arrotondati */
+    }
+
+    #animeSelect:hover,
+    #arcSelect:hover,
+    #episodeInput:hover,
+    button:hover {
+      border: 1px solid #ffcc00; /* Cambia il bordo durante il passaggio del mouse */
+    }
+
+    #animeSelect:focus,
+    #arcSelect:focus,
+    #episodeInput:focus,
+    button:focus {
+      outline: none; /* Rimuove la cornice di evidenziazione durante il focus */
+      border: 1px solid #ffcc00; /* Cambia il bordo durante il focus */
+      box-shadow: 0 0 5px rgba(255, 204, 0, 0.7); /* Aggiunge un'ombra sottile durante il focus */
+    }
+    body {
+      background-color: #f5f5f5;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Convertitore Anime ONE PIECE: Da Episodi a Capitoli</h1>
+    <p>Benvenuto nel convertitore che ti permette di trasformare il numero di episodi di un anime nel corrispondente numero di capitoli nel manga. Scegli l'anime dalla lista, immetti il numero dell'episodio, e otterrai il risultato!</p>
+
+    <select id="animeSelect"></select>
+    <select id="arcSelect" style="display:none;"></select>
+    <input type="number" id="episodeInput" placeholder="Inserisci il numero dell'episodio">
+    <button onclick="convert()">Converti</button>
+
+    <p id="result"></p>
+  </div>
+
+
+  <script>
+    var animeData = {
+        "Romance Dawn": 1.75,
+        "Orange Town": 2.8,
+        "Syrup Village": 2,
+        "Baratie": 2.25,
+        "Arlong Park": 1.92,
+        "Loguetown": 0.71,
+        "Reverse Mountain": 2.5,
+        "Whisky Peak": 2.25,
+        "Little Garden": 1.88,
+        "Drum Island": 1.79,
+        "Alabasta": 1.62,
+        "Jaya": 2.11,
+        "Skypeia": 1.53,
+        "Long Ring Long Land": 1.27,
+        "Water 7": 1.51,
+        "Enies Lobby": 1.22,
+        "Post-Enies Lobby": 0.85,
+        "Thriller Bark": 1.07,
+        "Sabaody Archipelago": 1.14,
+        "Amazon Lily": 0.79,
+        "Impel Down": 0.93,
+        "Marineford": 0.94,
+        "Post-War": 0.65,
+        "Return to Sabaody": 0.83,
+        "Fish-Man Island": 1,
+        "Punk Hazard": 1,
+        "Dressrosa": 0.86,
+        "Zou": 0.79,
+        "Whole Cake Island": 0.82,
+        "Reverie": 0.5,
+        "Wano Country (currently)": 0.7
+    };
+
+    // Function to populate the anime select dropdown
+    function populateAnimeSelect() {
+        var animeSelect = document.getElementById("animeSelect");
+
+        // Loop through the animeData dictionary and create options
+        for (var anime in animeData) {
+            var option = document.createElement("option");
+            option.value = anime;
+            option.textContent = anime;
+            animeSelect.appendChild(option);
+        }
+    }
+
+    // Call the function to populate the anime select dropdown
+    populateAnimeSelect();
+
+    // Function to handle the conversion
+    function convert() {
+        // Add your conversion logic here
+        var selectedAnime = document.getElementById("animeSelect").value;
+        
+    }
+  </script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Convertitore Anime. Tutti i diritti riservati.</p>
+      <p>Questo software è fornito senza garanzie di alcun tipo. Utilizzare a proprio rischio.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

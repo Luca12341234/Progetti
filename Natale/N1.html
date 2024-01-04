@@ -1,0 +1,39 @@
+<html lang="it"><!--TAG INIZIALE CON ATTRIBUTO LANG PER INDICARE LA LINGUA DEL SITO-->
+<head><!--TESTA DEL SITO-->
+<link rel="icon" href="imag/icona.png"><!--TAG PER INSERIRE UN ICONA-->
+<title>NATALE</title><!--TAG PER INSERIRE IL TITOLO-->
+<style>
+img{
+position:relative;
+top:-70px;
+}
+body{
+background-color:82b4e7;
+}
+h1:hover{
+background-color:#ff0000;
+}
+span{
+position:relative;
+top:100px;
+left:470px;
+}
+</style>
+</head>
+<body><!--CORPO DEL SITO-->
+<h1 align="center">NATALE</h1><!--TAG PER INSERIRE IL TITOLO CON ATTRIBUTO ALIGN PER ALLINEARLO AL CENTRO-->
+<span><!--TAG PER CONTENERE I PARAGRAFI-->
+<p>Clicca nella prima pallina sinistra per vedere la storia del  Natale.</p>
+<p>Clicca nella seconda pallina per vedere delle immagini sul Natale.<p>
+<p>Clicca nell' ultima pallina per vedere una descrizione del Natale.</p>
+</span>
+<img src="imag/nataleg.jpg" usemap="#image-map"><!--IMMAGINE CON MAPPATURA-->
+<map name="image-map">
+    <area  target="_blank"alt="IMMAGINE_STORIA_NATALE" title="STORIA_NATALE" href="https://it.wikipedia.org/wiki/Natale" coords="42,74,34" shape="circle">
+    <area  alt="IMMAGINE_GALLERIA" title="GALLERIA" href="N2.html" coords="177,142,44" shape="circle">
+    <area  alt="IMMAGINE_DESCRIZIONE" title="DESCRIZIONE" href="N3.html" coords="77,243,44" shape="circle">
+</map>
+<hr><!--TAG PER ANDARE A CAPO CON LA LINEA-->
+<marquee onmouseout="this.start()" onmouseover="this.stop()"><mark>BUON NATALE</mark></marquee><!--TAG PER FAR MUOVERE IL CONTENUTO-->
+</body
+</html><!--TAG PER CHIUDERE IL CODICE HTML-->
